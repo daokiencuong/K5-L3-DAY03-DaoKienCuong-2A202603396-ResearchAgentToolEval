@@ -161,12 +161,24 @@ def main() -> None:
     parser.add_argument("--max-tool-rounds", type=int, default=4)
     args = parser.parse_args()
 
-    system_prompt = args.system_prompt.read_text(encoding="utf-8")
-    tool_declarations = load_tool_declarations(args.tools)
+    # Automatically resolve versioned artifacts if not specified explicitly
+    system_prompt_path = args.system_prompt
+    tools_path = args.tools
+    if system_prompt_path == ARTIFACTS_DIR / "system_prompt.md":
+        v_prompt = ARTIFACTS_DIR / f"system_prompt_{args.version}.md"
+        if v_prompt.exists():
+            system_prompt_path = v_prompt
+    if tools_path == ARTIFACTS_DIR / "tools.yaml":
+        v_tools = ARTIFACTS_DIR / f"tools_{args.version}.yaml"
+        if v_tools.exists():
+            tools_path = v_tools
+
+    system_prompt = system_prompt_path.read_text(encoding="utf-8")
+    tool_declarations = load_tool_declarations(tools_path)
     openai_tools = to_openai_tools(tool_declarations)
     provider = make_provider(args.provider)
     selected_model = args.model or getattr(provider, "default_model", None)
-    artifact_version = build_artifact_version(args.version, args.system_prompt, args.tools)
+    artifact_version = build_artifact_version(args.version, system_prompt_path, tools_path)
 
     timestamp = datetime.now().strftime("%Y%m%dT%H%M%S%f")
     transcript_id = "_".join([
@@ -180,8 +192,8 @@ def main() -> None:
         **artifact_version_dict(artifact_version),
         "provider": args.provider,
         "model": selected_model,
-        "system_prompt": str(args.system_prompt),
-        "tools": str(args.tools),
+        "system_prompt": str(system_prompt_path),
+        "tools": str(tools_path),
         "history_window": args.history_window,
         "max_tool_rounds": args.max_tool_rounds,
         "created_at": now_iso(),

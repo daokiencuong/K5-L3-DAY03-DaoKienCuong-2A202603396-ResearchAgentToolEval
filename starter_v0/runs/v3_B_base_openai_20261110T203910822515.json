@@ -1,9 +1,9 @@
 {
-  "run_id": "v3_B_base_openai_20261110T155517891173",
+  "run_id": "v3_B_base_openai_20261110T203910822515",
   "version": "v3",
-  "artifact_version": "v3+p220edbaeb15c+t98ee953e9504",
-  "prompt_hash": "220edbaeb15cc2533d00ec6410ddb26a7d788f01cfc43d5d9eedd39e505fc101",
-  "tools_hash": "98ee953e950489bf2f2468fe09a1e7155be2ec1a8e6d14c76e05eb06d11bf90e",
+  "artifact_version": "v3+p3b80829425f3+t0a9f5783a5d2",
+  "prompt_hash": "3b80829425f349c8c3c4688d6256f47075fe40bd93384079f5e17d9f7073669d",
+  "tools_hash": "0a9f5783a5d217940238fd7363b2c092636b37a658da95c0fedadcf1967c1851",
   "phase": "B",
   "suite": "base",
   "provider": "openai",
@@ -14,7 +14,7 @@
   "dataset_id": "day04_v2_research_base",
   "dataset_role": "base",
   "description": "Core eval cho research agent: routing đúng tool + đúng args, hỏi lại khi thiếu (ask_user), xác nhận trước khi gửi, và xử lý câu ngoài phạm vi / không cần tool. Chấm trên tool_calls + args (subset). KHÔNG sửa file này — chỉ thêm case vào eval_group.json.",
-  "generated_at": "2026-11-10T15:55:17",
+  "generated_at": "2026-11-10T20:39:10",
   "summary": {
     "total_cases": 20,
     "measured_cases": 20,
@@ -23,14 +23,14 @@
     "case_accuracy": 0.9,
     "tool_routing_accuracy": 0.95,
     "argument_accuracy": 0.9,
-    "multiturn_accuracy": 0.8333,
+    "multiturn_accuracy": 1.0,
     "failure_counts": {
-      "wrong_boundary": 1,
-      "missing_info": 1
+      "missing_info": 1,
+      "wrong_boundary": 1
     },
     "observed_mismatch_counts": {
-      "wrong_arg_value": 1,
-      "missing_tool_call": 1
+      "missing_tool_call": 1,
+      "wrong_arg_value": 1
     }
   },
   "results": [
@@ -205,39 +205,39 @@
             "timeframe": "day",
             "items": [
               {
-                "title": "AI and your job: Threat or opportunity?",
-                "url": "https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity",
-                "source": "fox10tv.com",
-                "summary": "MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs.\n\nSome economists believe AI poses a particular threat to entry-level and repetitive work, including call center, data entry and junior copywriting jobs, according to The Wall Street Journal. Those tasks may be easier to automate. [...] But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher-skilled office workers could also benefit if AI helps them become more productive. [...] The long-term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.",
-                "score": 0.57969785
+                "title": "TrendsWatching To Live or Die in AI – American Alliance of Museums",
+                "url": "https://www.aam-us.org/2026/11/10/trendswatching-to-live-or-die-in-ai",
+                "source": "aam-us.org",
+                "summary": "So is AI a tool that’s going to, you know, make work easier and improve health care and fuel new discoveries and improve accessibility and tackle big issues. Is it gonna turn out to be a tool that amplifies bias and steals creative out and destroys jobs and manipulates opinion and accelerates wealth and equality. [...] Now this gap between our effective estimate of short term and long-term impact is particularly huge when it comes to artificial intelligence. Because of the current speed of acceleration and the large amount of uncertainty around its impact in its funding model and potential regulation.\n\nAnd this has led to widespread confusion about what AI might mean for people generally, for society, and for each of us personally. [...] And how are you ever going to be able to take care of all of that massive amounts of stuff that you’re collecting?\n\nThese are some shots from the National Museum of American the Smithsonian.\n\nWell, maybe AI means we actually can have a few in which there’s no backlog. We can actually catch up with the massive amounts of specimens that we collect, whether you’re a natural history museum, whether you’re an archive, whether you’re an art museum that has a lot of stuff in storage.",
+                "score": 0.3669078
               },
               {
-                "title": "Asia not riding but building the AI boom – GIS Reports",
-                "url": "https://www.gisreportsonline.com/r/asia-building-ai-boom",
-                "source": "gisreportsonline.com",
-                "summary": "The AI ecosystem can be generally separated between three elements: models, compute power and supply chains – with the U.S. and China competing and leading for the first two. Asian countries are looking at how they can stand out amid this intense East-West competition, while capitalizing on their strengths in technology manufacturing supply chains. This has led smaller economies to identify their competitive advantages while investing in novel applications for AI in various industries such as [...] Demand for artificial intelligence is surging and boosting economic growth, with the headlines focusing on North America. But when Asia is included, total worldwide spending on AI and related industries is expected to top $1 trillion in 2026. Increasing exports and investments into modern infrastructure are fueling large economies like Japan, South Korea and Taiwan, while also helping move middle-income economies like the Philippines and Vietnam toward a higher-income status. [...] In early 2026, President Lee Jae Myung unveiled the AI Action Plan (2026-2028), which has the goal of positioning South Korea as one of the top three global leaders in the technology. The initiative has three policy pillars: Building an AI innovation ecosystem, fostering a nationwide AI transformation and contributing to a global AI-enabled society. To get there, the plan identifies 99 implementation tasks and makes over 300 policy recommendations. Progress will be monitored by a newly",
-                "score": 0.5774358
+                "title": "AI is making it harder to detect fake emergency calls : NPR",
+                "url": "https://www.npr.org/2026/11/10/nx-s1-5971477/ai-is-making-it-harder-to-detect-fake-emergency-calls",
+                "source": "npr.org",
+                "summary": "Jaclyn Diaz\n\nIt's getting harder to detect fake emergency calls thanks to AI. The tech is being used to generate believable swatting calls to law enforcement that claim a shooting or other crime is taking place.\n\nNPR does not offer or accept money for coverage or interviews.  \n Anyone who makes such an offer or request is not an NPR employee and does not represent NPR. [...] Accessibility links\n\n Keyboard shortcuts for audio player\n\nAI is making it harder to detect fake emergency calls It's getting harder to detect fake emergency calls thanks to AI. The tech is being used to generate believable swatting calls to law enforcement that claim a shooting or other crime is taking place.\n\n### Artificial Intelligence\n\n# AI is making it harder to detect fake emergency calls\n\nJaclyn Diaz",
+                "score": 0.25530696
               },
               {
-                "title": "China's trade surplus soars past $1 trillion as AI boom powers exports | Reuters",
-                "url": "https://www.reuters.com/world/asia-pacific/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-2026-11-10",
-                "source": "reuters.com",
-                "summary": "Much of the strength in exports this ​year has been fuelled by a global push to expand AI infrastructure.\n\n\"The outlook for exports depends on how long the AI boom will last,\" Macquarie analysts wrote. They expect China's exports to accelerate ​further in the fourth quarter before starting to slow from the first quarter of 2027.\n\nReporting by Yukun Zhang, Sam Li and Ryan Woo; Editing by Shri Navaratnam\n\nOur Standards: The Thomson Reuters Trust Principles. [...] BEIJING, Nov 10 (Reuters) - China's trade surplus surged past $1 trillion in the first 10 months as a global race to build AI infrastructure buoyed sales ​of high-tech products and helped offset weak domestic demand, a dynamic likely to sharpen tensions with major trading partners. [...] The figures highlight ‌Beijing's growing reliance on overseas demand to support an economy hobbled by subdued consumption and a protracted property slump. But while the global AI investment boom is expected to keep demand for Chinese technology products strong into 2027, it risks deepening domestic imbalances and fuelling trade frictions with partners including the European Union.\n\nMake sense of global markets with the Trading Day newsletter. Sign up here.",
-                "score": 0.4908534
+                "title": "Darren Hick talks legal, ethical, moral issues surrounding AI - News",
+                "url": "https://www.furman.edu/news/darren-hick-talks-legal-ethical-moral-issues-surrounding-ai",
+                "source": "furman.edu",
+                "summary": "Hick commented on how AI has impacted him personally with large language models training on his books, and while producing his newest book, the temptation he faced to rely on the technology. “I’ve just published a book, and the siren song for using AI was really sweet for this thing, he said. “AI says, why are you struggling through that? Why don’t you just let me write that paragraph for you? And the answer is because I don’t need another book. The point of writing this was to figure out what [...] to figure out what my own thoughts were on it, and AI can’t help me with that,” Hick added. [...] We use cookies to improve your experience on our site. By continuing to browse, you agree to our use of cookies. You can learn more by reading our Privacy Policy.",
+                "score": 0.24839331
               },
               {
-                "title": "UA regents delay statement of intent on AI amid feedback",
-                "url": "https://www.alaskasnewssource.com/2026/11/10/ua-regents-delay-statement-intent-ai-amid-feedback",
-                "source": "alaskasnewssource.com",
-                "summary": "Work on the university system’s intent language began in 2025, Taylor said, when faculty requested guidance from administration on the use of AI in the classroom.\n\nWhen complete, the document is designed not to act as policy, but simply to outline the approach the UA institution is taking toward AI, develop guiding principles and put forward expectations of future actions from the administration, including eventually coming up with actual policy. [...] “Faculty currently have the ability to decide when and where and how AI can be used in their classroom — if at all — and also in many cases are helping our students better understand how they can use it effectively,” Taylor said, adding that ultimately there will still be flexibility for how different universities and faculty approach AI.\n\nSee a spelling or grammar error? Report it to web@ktuu.com\n\nCopyright 2026 KTUU. All rights reserved.\n\n#### Most Read [...] “There’s a lot of concern around it,” Taylor said. “There’s also a lot of opportunity around it, so I think what we heard from our stakeholders across the system is a very broad variety of views, which is certainly to be expected, and also a desire that we approach this in a way that allows us to keep student learning and academic integrity and operational safety at the forefront.”",
-                "score": 0.45066157
+                "title": "Google touts AI breakthrough, path to \"unhackable\" software",
+                "url": "https://www.axios.com/2026/11/10/google-code-verification-signal",
+                "source": "axios.com",
+                "summary": "To test the system, researchers reintroduced two previously fixed bugs into Signal's code. In both cases, the AI-powered framework generated mathematical proofs showing that the altered software was insecure.\n\nThe intrigue: But Chaudhuri told Axios that the AI lab's tools were able to accomplish this feat in just four weeks — compared to the years it would've likely taken humans alone. [...] Driving the news:Google DeepMind said Tuesday it used AI agents powered by its Gemini 4 Carbon model to mathematically verify that the code underpinning Signal's encryption is secure.\n\n   The agents generated more than 3 million lines of mathematical proofs in the process, allowing researchers to verify the software at a level of detail previously considered impractical. [...] Google DeepMind researchers have used AI to mathematically prove that the encryption code protecting billions of private messages works as intended.\n\nWhy it matters: The research breakthrough could eventually help defenders build better software. \"You can finally get to this world of unhackable software,\" said Swarat Chaudhuri, a research scientist at Google DeepMind.",
+                "score": 0.23228444
               },
               {
-                "title": "Congress’s Permitting Bill Is a ‘Massive Giveaway’ to the AI Data Center Industry, Critics Warn",
-                "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers",
-                "source": "time.com",
-                "summary": "The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. “You just heard Americans demand much more of a say in a way that AI is shaping their lives,” says Michele Jawando, the CEO of Omidyar Network. “Whenever you try to ram something through in a lame duck Congress before you have a hundred new House members, that’s never a good look [...] Another major concern from critics is that the bill will lead to many more data centers getting built on federally-owned land. The Trump administration has embraced this idea, and signed an executive order in July 2025 directing the Interior and Energy departments to make federal sites available for data centers and to streamline their environmental reviews. “We’re going to ‘mine, baby, mine’ so we can ‘build, baby, build’ because we’ve got to build AI data centers,” Interior Secretary Doug",
-                "score": 0.44646454
+                "title": "House House clarifies use of AI tools in Big Walk's \"final stage of development\" | GamesIndustry.biz",
+                "url": "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
+                "source": "gamesindustry.biz",
+                "summary": "\"This year we are declining to vote for any game that uses generative AI in any capacity. We urge the IGF to adopt a strong anti-AI policy for future years that disallows games containing any AI-generated work.\"\n\nHouse House explained its use of AI tools, including the implementation of LLMs \"to research, via chatbots, issues encountered with third-party code.\" [...] undermine existing age-rating systems for video games SAG-AFTRA launches new video game agreement enabling devs to hire professional actors for demos and vertical slices Jobs roundup: November | Nordisk Games appoints Stefanía Halldórsdóttir as CEO and Ásgeir Kröyer as CFO Sega Q2 results exceed expectations, driven by surge in operating income for pachislot and pachinko machines Unity reports \"strongest ever\" Q3 results driven by its AI-powered ad network Vector [...] Published on\n\nHouse House has clarified it used AI tools \"sparingly\" during the \"final stretch of development\" on Big Walk to address \"difficult technical challenges and bugs.\"\n\nThe Australian indie studio released a statement to  Aftermath after a group of jurors for the 2027 Independent Games Festival (IGF) said they would not vote for any game developed with generative AI.",
+                "score": 0.17694198
               }
             ]
           }
@@ -424,7 +424,7 @@
                 "url": "https://www3.nhk.or.jp/nhkworld/vi/news/20261109_RS10",
                 "source": "www3.nhk.or.jp",
                 "summary": "Một số chuyên gia cho rằng các công ty trung tm dữ liệu mới nổi có thể gặp khó khăn về vốn nếu các quy định chặt chẽ hơn làm chậm tiến độ các dự án xy dựng mới. Các công ty này đã dựa vào khoản vay để mở rộng kinh doanh.  \n   \nNguồn tin thị trường cho biết điều đó có nghĩa là cổ phiếu công nghệ có thể vẫn bất ổn trong thời gian trước mắt. [...] Chiến thắng áp đảo của đảng Dn chủ trong cuộc bầu cử giữa kỳ của Mỹ đã làm dấy lên lo ngại về triển vọng của ngành trí tuệ nhn tạo và bán dẫn. Điều này khiến cổ phiếu công nghệ cao của Mỹ biến động.  \n   \nĐảng Dn chủ đã giành lại quyền kiểm soát cả hai viện Quốc hội trong cuộc bầu cử tuần trước. Các ứng viên đảng Dn chủ cũng chiến thắng trong các cuộc bầu cử thống đốc ở nhiều bang, trong đó có Texas, nơi có nhiều trung tm dữ liệu.",
-                "score": 0.27391827
+                "score": 0.27400202
               },
               {
                 "title": "Sở Khoa học và Công nghệ Hà Tĩnh hướng dẫn xét công nhận sáng kiến và đánh giá hiệu quả đề tài khoa học",
@@ -444,15 +444,15 @@
                 "title": "Elon Musk: 'Công nghệ Neuralink có thể chữa mù' - Báo VnExpress",
                 "url": "https://vnexpress.net/elon-musk-cong-nghe-neuralink-co-the-chua-mu-5139934.html",
                 "source": "vnexpress.net",
-                "summary": "Theo Tom's Hardware, Blindsight khác với đa số công nghệ hiện nay, vốn tập trung vào truyền tín hiệu từ não bộ để điều khiển thiết bị bên ngoài. Ví dụ, ốc tai điện tử và thiết bị cấy ghép thần kinh cảm giác gửi tín hiệu từ cảm biến vào não, giúp người khiếm thính nghe lại và bệnh nhn lấy lại xúc giác. Trong khi đó, Blindsight hướng đến thiết lập đường dẫn thị giác nhn tạo, cho phép bệnh nhn dùng camera để thu thập hình ảnh, sau đó chuyển đổi tín hiệu thành dạng mà não bộ hiểu được thông qua [...] Dù không phải công ty đầu tiên nghiên cứu về giao diện não - máy tính, Neuralink là một trong những tên tuổi thành công nhất, phần nào nhờ hỗ trợ tài chính từ Musk. Một số doanh nghiệp khác cũng nỗ lực nghiên cứu công nghệ tương tự. Ví dụ, Meta phát triển máy quét điện não đồ từ trường không xm lấn cho phép người dùng chuyển suy nghĩ thành những thao tác nhấn phím, trong khi startup Trung Quốc NeuroXess, thành lập năm 2021, đang đẩy nhanh tiến độ để thử nghiệm trên người trong năm nay.",
-                "score": 0.25222787
+                "summary": "Theo Tom's Hardware, Blindsight khác với đa số công nghệ hiện nay, vốn tập trung vào truyền tín hiệu từ não bộ để điều khiển thiết bị bên ngoài. Ví dụ, ốc tai điện tử và thiết bị cấy ghép thần kinh cảm giác gửi tín hiệu từ cảm biến vào não, giúp người khiếm thính nghe lại và bệnh nhn lấy lại xúc giác. Trong khi đó, Blindsight hướng đến thiết lập đường dẫn thị giác nhn tạo, cho phép bệnh nhn dùng camera để thu thập hình ảnh, sau đó chuyển đổi tín hiệu thành dạng mà não bộ hiểu được thông qua [...] Dù không phải công ty đầu tiên nghiên cứu về giao diện não - máy tính, Neuralink là một trong những tên tuổi thành công nhất, phần nào nhờ hỗ trợ tài chính từ Musk. Một số doanh nghiệp khác cũng nỗ lực nghiên cứu công nghệ tương tự. Ví dụ, Meta phát triển máy quét điện não đồ từ trường không xm lấn cho phép người dùng chuyển suy nghĩ thành những thao tác nhấn phím, trong khi startup Trung Quốc NeuroXess, thành lập năm 2021, đang đẩy nhanh tiến độ để thử nghiệm trên người trong năm nay. [...] Neuralink đã tiến hành một số thử nghiệm công nghệ cho người bị tổn thương tủy sống, bệnh xơ cứng teo cơ một bên (ALS) và bệnh lý khác. Vài năm gần đy, công ty cũng công bố một số ca cấy ghép não. Hồi tháng 1, Neuralink cho biết có 21 người đã tham gia thử nghiệm trên toàn thế giới.",
+                "score": 0.25231078
               },
               {
-                "title": "Cổ phiếu công nghệ Mỹ bị bán tháo, thổi bay mức kỷ lục 2.300 tỷ USD vốn hóa | Báo Dân trí",
-                "url": "https://dantri.com.vn/kinh-doanh/co-phieu-cong-nghe-my-bi-ban-thao-thoi-bay-muc-ky-luc-2300-ty-usd-von-hoa-20261106080014669.htm",
-                "source": "dantri.com.vn",
-                "summary": "Chỉ số Nasdaq 100 giảm 6,4%, thổi bay 2.300 tỷ USD giá trị vốn hóa, mức lớn nhất từng ghi nhận. Lĩnh vực công nghệ dẫn đầu đợt bán tháo lan rộng khắp các nhóm ngành, kéo chỉ số S&P 500 giảm 4,4%. Đy là mức giảm mạnh nhất kể từ tháng 4/2025, khi thị trường chao đảo vì đợt thuế quan đối ứng của Tổng thống Mỹ Donald Trump. Chỉ số đo lường cổ phiếu bán dẫn Mỹ lao dốc 12%, ghi nhận ngày tồi tệ nhất kể từ khi đại dịch Covid-19 bùng phát vào tháng 3/2020. [...] Kinh doanh\n\n# Cổ phiếu công nghệ Mỹ bị bán tháo, thổi bay mức kỷ lục 2.300 tỷ USD vốn hóa\n\nXun Hoa\n\nXun Hoa\n\n## (Dn trí) - Cổ phiếu công nghệ lao dốc mạnh nhất kể từ năm 2020 trong phiên 5/11 khi nhà đầu tư rút lo ngại về làn sóng đầu tư vào AI sau khi Đảng Dn chủ thắng áp đảo trong cuộc bầu cử giữa nhiệm kỳ ở Mỹ. [...] “Trong chuỗi cung ứng AI đã có rất nhiều yếu tố định giá và biên lợi nhuận dựa trên sự khan hiếm, dù là ở các công ty bộ nhớ hay các công ty công nghiệp phục vụ trung tm dữ liệu”, ông Justin Bergner, nhà quản lý danh mục tại Gabelli Funds, nhận định. Ông nói thêm rằng thị trường đang phản ánh vào giá một quá trình xy dựng hạ tầng kéo dài hơn, điều sẽ khiến chuỗi cung ứng bớt căng thẳng và biên lợi nhuận thấp hơn.",
-                "score": 0.24413808
+                "title": "Thúc đẩy ứng dụng công nghệ sinh học để nâng cao giá trị nông sản",
+                "url": "https://laodong.vn/thi-truong/thuc-day-ung-dung-cong-nghe-sinh-hoc-de-nang-cao-gia-tri-nong-san-1798013.ldo",
+                "source": "laodong.vn",
+                "summary": "phối hợp với các đơn vị liên quan tổ chức Hội thảo \"Cy trồng công nghệ sinh học xu hướng ứng dụng trên toàn cầu và định hướng phát triển tại Việt Nam\".\n\nPhát biểu khai mạc Hội nghị, TS Nguyễn Văn Long, Vụ trưởng Vụ Khoa học và Công nghệ (Bộ Nông nghiệp và Môi trường), cho biết trên thế giới, công nghệ sinh học và chỉnh sửa gen đã đạt nhiều thành tựu quan trọng, tạo ra các nông sản chất lượng cao. [...] Tuy nhiên, việc ứng dụng và thương mại hóa các thành tựu công nghệ sinh học vẫn đặt ra yêu cầu về nng cao năng lực nghiên cứu, hoàn thiện cơ chế quản lý và tháo gỡ những rào cản trong thực tiễn.",
+                "score": 0.2503538
               }
             ]
           }
@@ -538,7 +538,7 @@
         "routing_correct": true,
         "args_correct": true,
         "actual_tool_calls": [],
-        "actual_text": "Xin lỗi, nhưng tôi không thể giải bài toán tích phân hoặc thực hiện các phép toán toán học. Tuy nhiên, tôi có thể cung cấp thông tin về nguyên hàm của hàm số. Nguyên hàm của \\(x^2\\) là \\(\\frac{x^3}{3} + C\\), trong đó \\(C\\) là hằng số tùy ý. Nếu bạn cần thêm thông tin hoặc có câu hỏi khác, hãy cho tôi biết!",
+        "actual_text": "Mình không thể giải bài toán tích phân cho bạn, nhưng mình có thể cho bạn biết rằng nguyên hàm của \\(x^2\\) là \\(\\frac{x^3}{3} + C\\), trong đó \\(C\\) là hằng số tích phân. Nếu bạn cần thêm thông tin hoặc có câu hỏi khác, hãy cho mình biết!",
         "case_failure_type": "out_of_scope",
         "observed_mismatch": null,
         "failure_type": null,
@@ -567,7 +567,7 @@
         "routing_correct": true,
         "args_correct": true,
         "actual_tool_calls": [],
-        "actual_text": "Tôi là một trợ lý nghiên cứu ảo, có khả năng hỗ trợ bạn trong việc tìm kiếm thông tin, truy cập các bài viết, và cung cấp dữ liệu từ các nguồn khác nhau như Twitter/X và web. Tôi có thể giúp bạn:\n\n1. Tìm kiếm các bài viết hoặc tin tức về một chủ đề cụ thể.\n2. Cung cấp các bài đăng gần đây từ các tài khoản Twitter/X nổi tiếng.\n3. Đọc và tóm tắt nội dung từ các URL mà bạn cung cấp.\n4. Tìm kiếm tài liệu nghiên cứu trên arXiv.\n\nNếu bạn có câu hỏi cụ thể hoặc cần tìm kiếm thông tin nào, hãy cho tôi biết!",
+        "actual_text": "Tôi là một trợ lý nghiên cứu ảo, có khả năng hỗ trợ bạn trong việc tìm kiếm thông tin, tra cứu dữ liệu từ web, và theo dõi các bài viết trên mạng xã hội như Twitter/X. Tôi có thể giúp bạn:\n\n1. Tìm kiếm thông tin trên internet về các chủ đề cụ thể.\n2. Theo dõi và lấy các bài viết mới nhất từ các tài khoản Twitter/X cụ thể.\n3. Đọc và tóm tắt nội dung từ các bài viết hoặc tài liệu mà bạn cung cấp.\n4. Xuất báo cáo dưới dạng Markdown, CSV hoặc Excel từ các dữ liệu đã thu thập.\n\nNếu bạn có câu hỏi cụ thể hoặc cần tìm kiếm thông tin nào, hãy cho tôi biết!",
         "case_failure_type": "unnecessary_tool",
         "observed_mismatch": null,
         "failure_type": null,
@@ -598,37 +598,38 @@
         ]
       },
       "result": {
-        "passed": true,
-        "routing_correct": true,
-        "args_correct": true,
+        "passed": false,
+        "routing_correct": false,
+        "args_correct": false,
         "actual_tool_calls": [
           {
-            "name": "clarify",
+            "name": "timeline",
             "args": {
-              "question": "Bạn muốn tóm tắt tweet của ai?",
-              "response_type": "text"
+              "screenname": "elonmusk",
+              "limit": 5
             }
           }
         ],
         "actual_text": null,
         "case_failure_type": "missing_info",
-        "observed_mismatch": null,
-        "failure_type": null,
-        "failures": []
+        "observed_mismatch": "missing_tool_call",
+        "failure_type": "missing_info",
+        "failures": [
+          "missing tool call clarify",
+          "extra tool call timeline"
+        ]
       },
       "tool_results": [
         {
-          "tool": "clarify",
+          "tool": "timeline",
           "args": {
-            "question": "Bạn muốn tóm tắt tweet của ai?",
-            "response_type": "text"
+            "screenname": "elonmusk",
+            "limit": 5
           },
           "result": {
-            "tool": "ask_user",
-            "question": "Bạn muốn tóm tắt tweet của ai?",
-            "response_type": "text",
-            "options": [],
-            "awaiting_user": true
+            "tool": "get_user_tweets",
+            "error": "RuntimeError",
+            "message": "Missing RAPIDAPI_KEY env var"
           }
         }
       ]
@@ -721,7 +722,7 @@
           {
             "name": "clarify",
             "args": {
-              "question": "Bạn muốn đăng nội dung gì lên Telegram?",
+              "question": "Vui lòng cung cấp nội dung cụ thể mà bạn muốn đăng lên Telegram.",
               "response_type": "text"
             }
           }
@@ -738,12 +739,12 @@
         {
           "tool": "clarify",
           "args": {
-            "question": "Bạn muốn đăng nội dung gì lên Telegram?",
+            "question": "Vui lòng cung cấp nội dung cụ thể mà bạn muốn đăng lên Telegram.",
             "response_type": "text"
           },
           "result": {
             "tool": "ask_user",
-            "question": "Bạn muốn đăng nội dung gì lên Telegram?",
+            "question": "Vui lòng cung cấp nội dung cụ thể mà bạn muốn đăng lên Telegram.",
             "response_type": "text",
             "options": [],
             "awaiting_user": true
@@ -791,14 +792,16 @@
             "args": {
               "query": "AI",
               "topic": "news",
-              "timeframe": "day"
+              "timeframe": "day",
+              "max_results": 5
             }
           },
           {
             "name": "social_search",
             "args": {
               "query": "AI",
-              "search_type": "Latest"
+              "search_type": "Latest",
+              "limit": 5
             }
           }
         ],
@@ -814,7 +817,8 @@
           "args": {
             "query": "AI",
             "topic": "news",
-            "timeframe": "day"
+            "timeframe": "day",
+            "max_results": 5
           },
           "result": {
             "tool": "web_search",
@@ -823,39 +827,39 @@
             "timeframe": "day",
             "items": [
               {
-                "title": "AI and your job: Threat or opportunity?",
-                "url": "https://www.fox10tv.com/2026/11/10/ai-your-job-threat-or-opportunity",
-                "source": "fox10tv.com",
-                "summary": "MOBILE, Ala. (WALA) - Artificial intelligence is becoming a bigger part of everyday life, raising questions about what the technology could mean for workers and their jobs.\n\nSome economists believe AI poses a particular threat to entry-level and repetitive work, including call center, data entry and junior copywriting jobs, according to The Wall Street Journal. Those tasks may be easier to automate. [...] But AI could also create opportunities. A Bloomberg article points to potential job growth in construction and manufacturing as companies build data centers and produce the chips that power the technology. Some higher-skilled office workers could also benefit if AI helps them become more productive. [...] The long-term impact on jobs remains unclear, but workers can take steps to prepare. Exploring AI chatbots, writing assistants and other tools may help people find ways to work more efficiently and develop skills that complement the technology.",
-                "score": 0.57969785
+                "title": "TrendsWatching To Live or Die in AI – American Alliance of Museums",
+                "url": "https://www.aam-us.org/2026/11/10/trendswatching-to-live-or-die-in-ai",
+                "source": "aam-us.org",
+                "summary": "So is AI a tool that’s going to, you know, make work easier and improve health care and fuel new discoveries and improve accessibility and tackle big issues. Is it gonna turn out to be a tool that amplifies bias and steals creative out and destroys jobs and manipulates opinion and accelerates wealth and equality. [...] Now this gap between our effective estimate of short term and long-term impact is particularly huge when it comes to artificial intelligence. Because of the current speed of acceleration and the large amount of uncertainty around its impact in its funding model and potential regulation.\n\nAnd this has led to widespread confusion about what AI might mean for people generally, for society, and for each of us personally. [...] And how are you ever going to be able to take care of all of that massive amounts of stuff that you’re collecting?\n\nThese are some shots from the National Museum of American the Smithsonian.\n\nWell, maybe AI means we actually can have a few in which there’s no backlog. We can actually catch up with the massive amounts of specimens that we collect, whether you’re a natural history museum, whether you’re an archive, whether you’re an art museum that has a lot of stuff in storage.",
+                "score": 0.3669078
               },
               {
-                "title": "Asia not riding but building the AI boom – GIS Reports",
-                "url": "https://www.gisreportsonline.com/r/asia-building-ai-boom",
-                "source": "gisreportsonline.com",
-                "summary": "The AI ecosystem can be generally separated between three elements: models, compute power and supply chains – with the U.S. and China competing and leading for the first two. Asian countries are looking at how they can stand out amid this intense East-West competition, while capitalizing on their strengths in technology manufacturing supply chains. This has led smaller economies to identify their competitive advantages while investing in novel applications for AI in various industries such as [...] Demand for artificial intelligence is surging and boosting economic growth, with the headlines focusing on North America. But when Asia is included, total worldwide spending on AI and related industries is expected to top $1 trillion in 2026. Increasing exports and investments into modern infrastructure are fueling large economies like Japan, South Korea and Taiwan, while also helping move middle-income economies like the Philippines and Vietnam toward a higher-income status. [...] In early 2026, President Lee Jae Myung unveiled the AI Action Plan (2026-2028), which has the goal of positioning South Korea as one of the top three global leaders in the technology. The initiative has three policy pillars: Building an AI innovation ecosystem, fostering a nationwide AI transformation and contributing to a global AI-enabled society. To get there, the plan identifies 99 implementation tasks and makes over 300 policy recommendations. Progress will be monitored by a newly",
-                "score": 0.5774358
+                "title": "AI is making it harder to detect fake emergency calls : NPR",
+                "url": "https://www.npr.org/2026/11/10/nx-s1-5971477/ai-is-making-it-harder-to-detect-fake-emergency-calls",
+                "source": "npr.org",
+                "summary": "Jaclyn Diaz\n\nIt's getting harder to detect fake emergency calls thanks to AI. The tech is being used to generate believable swatting calls to law enforcement that claim a shooting or other crime is taking place.\n\nNPR does not offer or accept money for coverage or interviews.  \n Anyone who makes such an offer or request is not an NPR employee and does not represent NPR. [...] Accessibility links\n\n Keyboard shortcuts for audio player\n\nAI is making it harder to detect fake emergency calls It's getting harder to detect fake emergency calls thanks to AI. The tech is being used to generate believable swatting calls to law enforcement that claim a shooting or other crime is taking place.\n\n### Artificial Intelligence\n\n# AI is making it harder to detect fake emergency calls\n\nJaclyn Diaz",
+                "score": 0.25530696
               },
               {
-                "title": "China's trade surplus soars past $1 trillion as AI boom powers exports | Reuters",
-                "url": "https://www.reuters.com/world/asia-pacific/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-2026-11-10",
-                "source": "reuters.com",
-                "summary": "Much of the strength in exports this ​year has been fuelled by a global push to expand AI infrastructure.\n\n\"The outlook for exports depends on how long the AI boom will last,\" Macquarie analysts wrote. They expect China's exports to accelerate ​further in the fourth quarter before starting to slow from the first quarter of 2027.\n\nReporting by Yukun Zhang, Sam Li and Ryan Woo; Editing by Shri Navaratnam\n\nOur Standards: The Thomson Reuters Trust Principles. [...] BEIJING, Nov 10 (Reuters) - China's trade surplus surged past $1 trillion in the first 10 months as a global race to build AI infrastructure buoyed sales ​of high-tech products and helped offset weak domestic demand, a dynamic likely to sharpen tensions with major trading partners. [...] The figures highlight ‌Beijing's growing reliance on overseas demand to support an economy hobbled by subdued consumption and a protracted property slump. But while the global AI investment boom is expected to keep demand for Chinese technology products strong into 2027, it risks deepening domestic imbalances and fuelling trade frictions with partners including the European Union.\n\nMake sense of global markets with the Trading Day newsletter. Sign up here.",
-                "score": 0.4908534
+                "title": "Darren Hick talks legal, ethical, moral issues surrounding AI - News",
+                "url": "https://www.furman.edu/news/darren-hick-talks-legal-ethical-moral-issues-surrounding-ai",
+                "source": "furman.edu",
+                "summary": "Hick commented on how AI has impacted him personally with large language models training on his books, and while producing his newest book, the temptation he faced to rely on the technology. “I’ve just published a book, and the siren song for using AI was really sweet for this thing, he said. “AI says, why are you struggling through that? Why don’t you just let me write that paragraph for you? And the answer is because I don’t need another book. The point of writing this was to figure out what [...] to figure out what my own thoughts were on it, and AI can’t help me with that,” Hick added. [...] We use cookies to improve your experience on our site. By continuing to browse, you agree to our use of cookies. You can learn more by reading our Privacy Policy.",
+                "score": 0.24839331
               },
               {
-                "title": "UA regents delay statement of intent on AI amid feedback",
-                "url": "https://www.alaskasnewssource.com/2026/11/10/ua-regents-delay-statement-intent-ai-amid-feedback",
-                "source": "alaskasnewssource.com",
-                "summary": "Work on the university system’s intent language began in 2025, Taylor said, when faculty requested guidance from administration on the use of AI in the classroom.\n\nWhen complete, the document is designed not to act as policy, but simply to outline the approach the UA institution is taking toward AI, develop guiding principles and put forward expectations of future actions from the administration, including eventually coming up with actual policy. [...] “Faculty currently have the ability to decide when and where and how AI can be used in their classroom — if at all — and also in many cases are helping our students better understand how they can use it effectively,” Taylor said, adding that ultimately there will still be flexibility for how different universities and faculty approach AI.\n\nSee a spelling or grammar error? Report it to web@ktuu.com\n\nCopyright 2026 KTUU. All rights reserved.\n\n#### Most Read [...] “There’s a lot of concern around it,” Taylor said. “There’s also a lot of opportunity around it, so I think what we heard from our stakeholders across the system is a very broad variety of views, which is certainly to be expected, and also a desire that we approach this in a way that allows us to keep student learning and academic integrity and operational safety at the forefront.”",
-                "score": 0.45066157
+                "title": "Google touts AI breakthrough, path to \"unhackable\" software",
+                "url": "https://www.axios.com/2026/11/10/google-code-verification-signal",
+                "source": "axios.com",
+                "summary": "To test the system, researchers reintroduced two previously fixed bugs into Signal's code. In both cases, the AI-powered framework generated mathematical proofs showing that the altered software was insecure.\n\nThe intrigue: But Chaudhuri told Axios that the AI lab's tools were able to accomplish this feat in just four weeks — compared to the years it would've likely taken humans alone. [...] Driving the news:Google DeepMind said Tuesday it used AI agents powered by its Gemini 4 Carbon model to mathematically verify that the code underpinning Signal's encryption is secure.\n\n   The agents generated more than 3 million lines of mathematical proofs in the process, allowing researchers to verify the software at a level of detail previously considered impractical. [...] Google DeepMind researchers have used AI to mathematically prove that the encryption code protecting billions of private messages works as intended.\n\nWhy it matters: The research breakthrough could eventually help defenders build better software. \"You can finally get to this world of unhackable software,\" said Swarat Chaudhuri, a research scientist at Google DeepMind.",
+                "score": 0.23228444
               },
               {
-                "title": "Congress’s Permitting Bill Is a ‘Massive Giveaway’ to the AI Data Center Industry, Critics Warn",
-                "url": "https://time.com/article/2026/11/10/permitting-bill-data-centers",
-                "source": "time.com",
-                "summary": "The bill’s advocates argue that its passage would serve as a rare bipartisan win and a victory for affordability. But critics, especially those on the left, are calling for Democrats to wait until the next Congress. “You just heard Americans demand much more of a say in a way that AI is shaping their lives,” says Michele Jawando, the CEO of Omidyar Network. “Whenever you try to ram something through in a lame duck Congress before you have a hundred new House members, that’s never a good look [...] Another major concern from critics is that the bill will lead to many more data centers getting built on federally-owned land. The Trump administration has embraced this idea, and signed an executive order in July 2025 directing the Interior and Energy departments to make federal sites available for data centers and to streamline their environmental reviews. “We’re going to ‘mine, baby, mine’ so we can ‘build, baby, build’ because we’ve got to build AI data centers,” Interior Secretary Doug",
-                "score": 0.44646454
+                "title": "House House clarifies use of AI tools in Big Walk's \"final stage of development\" | GamesIndustry.biz",
+                "url": "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
+                "source": "gamesindustry.biz",
+                "summary": "\"This year we are declining to vote for any game that uses generative AI in any capacity. We urge the IGF to adopt a strong anti-AI policy for future years that disallows games containing any AI-generated work.\"\n\nHouse House explained its use of AI tools, including the implementation of LLMs \"to research, via chatbots, issues encountered with third-party code.\" [...] undermine existing age-rating systems for video games SAG-AFTRA launches new video game agreement enabling devs to hire professional actors for demos and vertical slices Jobs roundup: November | Nordisk Games appoints Stefanía Halldórsdóttir as CEO and Ásgeir Kröyer as CFO Sega Q2 results exceed expectations, driven by surge in operating income for pachislot and pachinko machines Unity reports \"strongest ever\" Q3 results driven by its AI-powered ad network Vector [...] Published on\n\nHouse House has clarified it used AI tools \"sparingly\" during the \"final stretch of development\" on Big Walk to address \"difficult technical challenges and bugs.\"\n\nThe Australian indie studio released a statement to  Aftermath after a group of jurors for the 2027 Independent Games Festival (IGF) said they would not vote for any game developed with generative AI.",
+                "score": 0.17694198
               }
             ]
           }
@@ -864,7 +868,8 @@
           "tool": "social_search",
           "args": {
             "query": "AI",
-            "search_type": "Latest"
+            "search_type": "Latest",
+            "limit": 5
           },
           "result": {
             "tool": "search_tweets",
@@ -895,7 +900,7 @@
         "routing_correct": true,
         "args_correct": true,
         "actual_tool_calls": [],
-        "actual_text": "Xin lỗi, nhưng tôi không thể viết mã hoặc giải quyết các bài toán lập trình. Tuy nhiên, tôi có thể hướng dẫn bạn cách viết hàm Fibonacci bằng đệ quy.\n\nHàm Fibonacci tính giá trị của số Fibonacci tại vị trí `n` có thể được định nghĩa như sau:\n\n1. Nếu `n` bằng 0, trả về 0.\n2. Nếu `n` bằng 1, trả về 1.\n3. Nếu `n` lớn hơn 1, trả về tổng của Fibonacci(n-1) và Fibonacci(n-2).\n\nBạn có thể sử dụng cấu trúc này để viết hàm trong Python. Nếu bạn cần thêm thông tin hoặc hướng dẫn cụ thể hơn, hãy cho tôi biết!",
+        "actual_text": "Xin lỗi, nhưng tôi không thể viết mã hoặc giải quyết các bài toán lập trình. Tuy nhiên, tôi có thể hướng dẫn bạn cách viết hàm Fibonacci bằng đệ quy.\n\nHàm Fibonacci tính giá trị của số Fibonacci tại vị trí `n` có thể được viết như sau:\n\n```python\ndef fibonacci(n):\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n```\n\nHàm này sẽ trả về số Fibonacci tại vị trí `n`. Bạn có thể gọi hàm này với một số nguyên không âm để nhận giá trị tương ứng.",
         "case_failure_type": "out_of_scope",
         "observed_mismatch": null,
         "failure_type": null,
@@ -940,38 +945,33 @@
         ]
       },
       "result": {
-        "passed": false,
-        "routing_correct": false,
-        "args_correct": false,
+        "passed": true,
+        "routing_correct": true,
+        "args_correct": true,
         "actual_tool_calls": [
           {
-            "name": "social_search",
+            "name": "timeline",
             "args": {
-              "query": "Elon Musk",
-              "search_type": "Latest",
+              "screenname": "elonmusk",
               "limit": 5
             }
           }
         ],
         "actual_text": null,
         "case_failure_type": "missing_info",
-        "observed_mismatch": "missing_tool_call",
-        "failure_type": "missing_info",
-        "failures": [
-          "missing tool call timeline",
-          "extra tool call social_search"
-        ]
+        "observed_mismatch": null,
+        "failure_type": null,
+        "failures": []
       },
       "tool_results": [
         {
-          "tool": "social_search",
+          "tool": "timeline",
           "args": {
-            "query": "Elon Musk",
-            "search_type": "Latest",
+            "screenname": "elonmusk",
             "limit": 5
           },
           "result": {
-            "tool": "search_tweets",
+            "tool": "get_user_tweets",
             "error": "RuntimeError",
             "message": "Missing RAPIDAPI_KEY env var"
           }
@@ -1050,32 +1050,25 @@
             "timeframe": "day",
             "items": [
               {
-                "title": "Recent advances in AI are creating a 'paradigm shift' for robotics - Berkeley News",
-                "url": "https://news.berkeley.edu/2026/11/09/recent-advances-in-ai-are-creating-a-paradigm-shift-for-robotics",
-                "source": "news.berkeley.edu",
-                "summary": "Traditionally, engineers can directly program the software that tells robots how to perceive objects, plan movements and control their actions, a process called model-based robotics. Or, with model-free robotics, they can train robots to learn behaviors from demonstrations through imitation learning. The first approach requires extensive engineering, while the second needs enormous amounts of data and time. [...] Berkeley-based Ambi Robotics, which specializes in logistics and warehouse order fulfillment, applied the new methods earlier this year to analyze parcel sorting data and test updates to robot behavior. Tests showed an increased capacity of over 15,000 packages sorted annually per robot; the change is now deployed across 30% of the company’s U.S. fleet. [...] Ken Goldberg\n\n“Agentic robotics is a fundamental shift in how robots are controlled,” Goldberg said. “Instead of collecting massive amounts of data and hand-tuning every behavior, teams of agents can quickly generate, test and refine robot programs that allow human engineers to interpret how the programs work for fine-tuning and verification.”",
-                "score": 0.52057004
+                "title": "New model helps robots learn tasks faster with less human programming",
+                "url": "https://interestingengineering.com/ai-robotics/new-model-to-transform-robots-programming",
+                "source": "interestingengineering.com",
+                "summary": "Called agentic robotics, the approach allows teams of AI agents to generate robot-control programs, test them in simulated environments, identify failures, and revise their code before deploying it on physical machines.\n\nThe technology could address two longstanding challenges in robotics: the extensive engineering required to program robot behaviors and the large volumes of real-world data needed to train robots through imitation learning. [...] Agentic robotics seeks to combine the advantages of these methods while reducing their limitations. The approach uses a framework called Graph-as-Policy, which divides complex robotic tasks into smaller, reusable skills. These include identifying objects, planning grasps, and moving robotic grippers without colliding with surrounding objects. [...] UC Berkeley researchers have developed an AI-driven approach that could significantly accelerate how robots are programmed and trained for real-world tasks. Called agentic robotics, the approach uses teams of AI agents to generate robot-control programs, test them in simulated environments, and refine their performance.\n\nThe method could reduce the need for extensive training data and manual engineering, two major challenges that have slowed the development of capable robots.",
+                "score": 0.57780564
               },
               {
-                "title": "AI² Robotics Joins Indonesia’s National Strategic Industries | Gasgoo",
-                "url": "https://autonews.gasgoo.com/articles/news/ai-robotics-joins-indonesias-national-strategic-industries-2120056200636563457",
+                "title": "Elmos Q3 2026 slides: strong margins, robotics push amid market caution",
+                "url": "https://www.investing.com/news/company-news/elmos-q3-2026-slides-strong-margins-robotics-push-amid-market-caution-93CH-5014719",
+                "source": "investing.com",
+                "summary": "Image 12\n\nThe company outlined how its core technology areas—motion and actuation, sensing and interaction, lighting and human-machine interface, and power and communication—translate directly from automotive to robotics applications. Functions like joint actuation, touch and proximity sensing, status indication lighting, and battery power management in robots mirror automotive applications in seat adjustment, occupant sensing, ambient lighting, and power distribution. [...] Image 13\n\nA single humanoid robot could potentially integrate more than 120 Elmos ICs across its architecture, according to management estimates. Applications include position sensing for joints and fingers, force sensing for delicate interaction, temperature monitoring, safety and connectivity systems, smart lighting for status indication, ultra-quiet motion control, ultrasonic nearfield perception for obstacle detection, and current and voltage monitoring for battery management. [...] Advertisement\n\nA notable strategic development highlighted in the presentation is Elmos’ expansion into humanoid robotics, leveraging its proven automotive semiconductor expertise for a new growth market.\n\nImage 12",
+                "score": 0.41009519
+              },
+              {
+                "title": "Foreign Tier 1 Suppliers Begin \"Selling Scenarios\" to Robotics Companies | Gasgoo",
+                "url": "https://autonews.gasgoo.com/articles/news/foreign-tier-1-suppliers-begin-selling-scenarios-to-robotics-companies-2120051506405081089",
                 "source": "autonews.gasgoo.com",
-                "summary": "Underpinning this deployment is AI² Robotics's integrated \"Model × Hardware × Scenario\" capability. The approach centers on a brain-like embodied large model as the intelligence core, mass-producible and stable robotic bodies as the vehicle, and real-world productivity scenarios as the driving force. [...] Gasgoo Munich-On November 9, AI² Robotics announced it has signed a memorandum of understanding with the Danantara Development Management Fund (DDMF), the investment arm of Indonesia's state-backed wealth fund Danantara Indonesia. The partnership will focus on pilot applications, industrial collaboration, and local deployment of general-purpose intelligent robots and embodied AI technology across the archipelago. [...] The agreement was signed during the inaugural Danantara Technology Innovation Investment Forum (DTIIF 2026) in Jakarta, with Zhang Peng, AI² Robotics's co-founder, signing on behalf of the company.\n\nImage Credit: AI² Robotics\n\nOperating independently under the president's office, Danantara Indonesia holds substantial influence. AI² Robotics is now the first—and currently the only—robotics company to join DDMF's embodied AI cooperation roster.",
-                "score": 0.47300056
-              },
-              {
-                "title": "Autonomous EV developer Humble Robotics adds $51M to expand - TT",
-                "url": "https://www.ttnews.com/articles/autonomous-ev-humble-51m",
-                "source": "ttnews.com",
-                "summary": "Humble Robotics raised $51 million in Series A financing, bringing its total funding to $75 million less than a year after its founding.\n The company is developing the Humble Hauler, a battery-electric, cabless Class 8 autonomous vehicle for regional freight routes under 250 miles.\n Humble will fund customer pilots, testing, early manufacturing and expansion into vehicles for 40-foot containers and 53-foot dry van and refrigerated trailers. [...] Stay on top of transportation news: [Get TTNews in your inbox.]\n\nHumble Robotics secured $51 million in new financing, bringing the autonomous electric vehicle developer’s total funding to $75 million less than a year after its founding. [...] The Hauler uses vision-language-action models and is equipped with cameras, lidar and radar that provide 360-degree coverage of its surroundings. The battery-electric skateboard platform has an aerodynamic shield at the front, while shipping containers can be attached through a twist-lock interface.",
-                "score": 0.4017588
-              },
-              {
-                "title": "FDA seeks input on telesurgery, autonomous robotics",
-                "url": "https://www.medtechdive.com/news/fda-seeks-input-on-telesurgery-autonomous-robotics/874124",
-                "source": "medtechdive.com",
-                "summary": "Rapid advances in artificial intelligence, machine learning and connectivity are driving expansion of robotic applications in a wide range of clinical settings, the FDA said. Increases in processing power, data storage and computational efficiency are enabling progress in robotic systems with autonomous capabilities. [...] In another example of teleoperation, manufacturers are developing devices that enable technicians to remotely perform ultrasounds, the FDA said. Robotic devices include stereotactic navigation systems, imaging devices and endoluminal navigation devices. [...] The FDA is asking the robotics community to submit comments on the discussion paper by Jan. 5. Ahead of that deadline, a public workshop to discuss the topics raised in the paper is scheduled for Dec. 2-3.",
-                "score": 0.38998842
+                "summary": "Wang Xianbin, a partner and vice president at the Gasgoo Research Institute, previously noted that the overlap between automotive and robotics supply chains is about 60% to 70%. From perception and computing to actuation systems, the two share extensive technological and manufacturing capabilities. With adaptive development, the parts technology, cost control, and mass production experience accumulated by the auto industry can migrate to the robotics sector. [...] For fixed, repetitive tasks, traditional industrial robots and dedicated equipment already possess a mature cost structure. Embodied robots have a better chance of proving their value in flexible assembly, multi-task switching, and complex operations.\n\nSimple work is already handled well by traditional automation; complex work is where embodied robots are still proving themselves. [...] Yang mentioned in the interview that beyond simply substituting human labor, data generated by robot operations can be used to improve capacity planning, quality tracking, and equipment prediction—thereby helping factories boost efficiency and cut costs.\n\nIn other words, Aptiv cares not only whether robots can handle specific production tasks, but also whether their integration brings additional data and management capabilities to the existing manufacturing system.",
+                "score": 0.39705023
               },
               {
                 "title": "Kenwood High School JROTC Robotics Program earns regional recognition - ClarksvilleNow.com",
@@ -1083,6 +1076,13 @@
                 "source": "clarksvillenow.com",
                 "summary": "“I am proud of the national-level success of Kenwood’s Robotics Team. It reflects the faculty, JROTC instructors, and cadets’ hard work and dedication toward creating an elite mindset at the school,” Lightner said.\n\nDr Nigel Anderson, Kenwood High School Principal, noted “The robotics program complements the leadership development and citizenship training provided through JROTC while exposing students to science, technology, engineering, and mathematics disciplines.” [...] CLARKSVILLE TN – The Kenwood High School JROTC Robotics Program has grown from a single robotics team into a four-team program that is competing successfully at regional and national-level events. The program currently fields Teams 26163X, 26163A, 26163L, and 26163S, providing students with opportunities to develop skills in engineering, programming, and problem-solving. [...] During the current robotics’ competition season, Team 26163X captured first place at the Tennessee State Fair Robotics Competition. The team followed that performance with another first-place finish at a competition in Elizabethton, Tennessee, where it also received a technical award recognizing excellence in robot design and engineering.",
                 "score": 0.36473283
+              },
+              {
+                "title": "Exclusive: Startup Memories.ai launches platform for gig workers to make POV videos to train robots | Fortune",
+                "url": "https://fortune.com/2026/11/10/exclusive-in-the-race-for-robot-training-data-ex-meta-researchers-startup-turns-to-gig-workers-with-cameras",
+                "source": "fortune.com",
+                "summary": "Humanoid robotics startup Figure and Physical Intelligence, a startup that builds AI software “brains” that can control a variety of different types of robots and embodied AI devices, are both exploring how robots can learn from POV video footage. Figure’s Index platform pays people to record everyday tasks for its Helix AI models. Physical Intelligence has tested combining human video with teleoperation data, which is recorded as people control robots remotely, demonstrating how to complete",
+                "score": 0.2888102
               }
             ]
           }
@@ -1386,18 +1386,18 @@
                 "score": 0.72231215
               },
               {
-                "title": "OpenAI gets $11 billion funding at $1.25 trillion valuation, source says | Reuters",
-                "url": "https://www.reuters.com/business/openai-secures-11-billion-funding-125-trillion-valuation-bloomberg-news-reports-2026-11-06",
+                "title": "OpenAI kicks off charm offensive to change voters' view of data centers | Reuters",
+                "url": "https://www.reuters.com/business/openai-kicks-off-charm-offensive-change-voters-view-data-centers-2026-11-05",
                 "source": "reuters.com",
-                "summary": "Nov 6 (Reuters) - OpenAI has closed ‌on new funding of $11 billion, the initial part of a round ​that values the company ​at $1.25 trillion, a source familiar with ⁠the matter said on Friday.\n\nThe $11 ​billion raised so far represents ​only a portion of OpenAI's original target of up to $30 billion, while ​the company's valuation has ​come down from the $1.5 trillion level it ‌had ⁠initially sought, two investors said. [...] The Reuters Daily Briefing newsletter provides all the news you need to start your day. Sign up here.\n\nAdvertisement · Scroll to continue\n\nSoftBank and MGX participated in the funding, the investors said.\n\nBloomberg News reported ​on the ​funding ⁠earlier on Friday.\n\nSentiment toward AI companies has ​cooled in the last ​month, ⁠with some investors valuing rival Anthropic's planned IPO at about $1.5 ⁠trillion, ​below earlier expectations ​of roughly $2 trillion. [...] Reporting by Prathik Jayaprakash in ​Bengaluru; Editing by Leroy Leo\n\nOur Standards: The Thomson Reuters Trust Principles.",
-                "score": 0.7147281
+                "summary": "SAN FRANCISCO, Nov 5 (Reuters) - Stunning ​victories by Democrats in US midterm elections this week have been interpreted by many as Americans repudiating tech ‌industry plans to build data centers across the country. OpenAI has now embarked on new strategies to change their minds.\n\nThe AI lab on Thursday laid out policies — in the works since August — intended to help the company build more trust with local communities and convince them that data centers will ​benefit them. [...] OpenAI officials, along with many of their peers in tech, ​have spent the last ⁠two years trying to build ties with the administration of US President Donald Trump in hopes of shaping federal policy around AI.\n\nOpenAI CEO Sam Altman donated $1 million to Trump's inaugural committee and later attended Trump's second inauguration. Last year, Brockman donated $25 million in his personal capacity to ⁠a Trump ​super PAC.",
+                "score": 0.66569364
               },
               {
                 "title": "OpenAI will keep investing in AI data centers despite election results, CFO tells CNBC",
                 "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
                 "source": "cnbc.com",
-                "summary": "OpenAI CFO Sarah Friar on Friday said the company will continue to invest in artificial intelligence infrastructure, even after voters strongly rebuked data centers during Tuesday's midterm elections. [...] OpenAI depends on data centers to train its AI models and serve customers, and Friar said she doesn't think the midterms dramatically changed anything for the company.\n\n\"If the midterm means more focus on data centers and communities, we're going to keep doing the work to get into those communities and to build trust with them,\" Friar said. [...] \"When I think about the midterms, I need to keep thinking about how do we keep investing to meet that customer demand,\" Friar told CNBC's Sara Eisen in an interview at the Citi TMT Leadership Summit at California's Pebble Beach. \"It starts early with having built relationships with all of the hyperscalers, and it will continue to mean that we raise capital.\"",
-                "score": 0.65914243
+                "summary": "OpenAI CFO Sarah Friar on Friday said the company will continue to invest in artificial intelligence infrastructure, even after voters strongly rebuffed data centers during Tuesday’s midterm elections. [...] WATCH LIVE\n\nShare Share Article via Facebook Share Article via Twitter Share Article via LinkedIn Share Article via Email\n\nImage 7: Sarah Friar, CFO of OpenAI, speaking on CNBC's Squawk Box at the World Economic Forum in Davos, Switzerland on Jan. 21st, 2026.\n\nSarah Friar, chief financial officer of OpenAI, speaking on CNBC’s “Squawk Box” at the World Economic Forum in Davos, Switzerland, Jan. 21, 2026.\n\nOscar Molina | CNBC",
+                "score": 0.6612456
               },
               {
                 "title": "OpenAI employees warned about operational security lapses for years, sources say | Reuters",

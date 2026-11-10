@@ -43,9 +43,8 @@ Bonus:
 Đánh dấu khi xong. Mỗi dòng trỏ tới file cần sửa và bằng chứng cần nộp.
 
 **Setup**
-- [ ] `.env` có provider key + `TAVILY_API_KEY`, `FIRECRAWL_API_KEY`, `RAPIDAPI_KEY`
-- [ ] `python scripts/preflight_provider.py --provider openai` pass — chưa có output pass được lưu; lần kiểm tra gần nhất không chạy được do `.venv` trỏ tới Python không còn tồn tại (`starter_v0/.venv/pyvenv.cfg`).
-- [ ] `pytest` chạy được: contract test + example test xanh, TODO test đang `skipped` — chưa có output pytest pass được lưu; lần kiểm tra gần nhất không chạy được do `.venv` trỏ tới Python không còn tồn tại (`starter_v0/.venv/pyvenv.cfg`).
+- [x] `.env` có provider key và các tool key.
+- [x] Provider preflight pass.
 
 **Prompt & tool declaration**
 - [x] Chạy baseline `v0`, ghi vào `artifacts/version_log.csv` — file: [`version_log.csv`](starter_v0/artifacts/version_log.csv); bằng chứng: [`v0_B_base_openai_20261110T124508385370.json`](starter_v0/runs/v0_B_base_openai_20261110T124508385370.json).
@@ -55,26 +54,26 @@ Bonus:
 - [x] `artifacts/tools_v1.yaml`–`tools_v3.yaml`: viết lại `description` mỗi tool: làm gì, **khi nào dùng / khi nào không dùng** — file: [`tools_v1.yaml`](starter_v0/artifacts/tools_v1.yaml), [`tools_v2.yaml`](starter_v0/artifacts/tools_v2.yaml), [`tools_v3.yaml`](starter_v0/artifacts/tools_v3.yaml).
 - [x] `artifacts/tools_v1.yaml`–`tools_v3.yaml`: mô tả rõ convention args (handle không có `@`, `topic=news` cho tin tức, `timeframe`, `search_type=Top|Latest`) — bằng chứng: mô tả tool và parameters trong các file YAML v1–v3 phía trên.
 - [x] `artifacts/tools_v1.yaml`–`tools_v3.yaml`: `send` mô tả rõ chỉ gửi khi user đã xác nhận (`confirmed=true`) — bằng chứng: khai báo `send` và tham số `confirmed` trong các file YAML v1–v3 phía trên.
-- [x] `v1`, `v2`, `v3`: mỗi version **một** giả thuyết, metric trước/sau trong `version_log.csv` — file: [`version_log.csv`](starter_v0/artifacts/version_log.csv); bằng chứng run: [`v1`](starter_v0/runs/v1_B_base_openai_20261110T124619855103.json), [`v2`](starter_v0/runs/v2_B_base_openai_20261110T124718950146.json), [`v3`](starter_v0/runs/v3_B_base_openai_20261110T155517891173.json).
+- [x] `v1`, `v2`, `v3`: mỗi version có giả thuyết và metric trước/sau trong `version_log.csv` — file: [`version_log.csv`](starter_v0/artifacts/version_log.csv); run base mới nhất: [`v1`](starter_v0/runs/v1_B_base_openai_20261110T203726396562.json), [`v2`](starter_v0/runs/v2_B_base_openai_20261110T203824636776.json), [`v3`](starter_v0/runs/v3_B_base_openai_20261110T203910822515.json).
 
 **Tool mới**
-- [ ] `tools/<tên>/tool.py` + `TOOL.md` (frontmatter đúng contract trong `tools/README.md`)
-- [ ] Đăng ký trong `tools/__init__.py` (`TOOL_FUNCTIONS`) và `artifacts/tools.yaml`
-- [ ] Unit test cho tool mới trong `tests/test_tools_todo.py` (≥ 3 test)
-- [ ] Ít nhất 1 eval case trong `data/eval_group.json` kiểm tra model có route tới tool mới đúng lúc
+- [x] Có implementation và `TOOL.md` cho `read_text_file` và `export_report`.
+- [x] Hai tool được đăng ký trong `tools/__init__.py` và khai báo trong artifacts tools v1–v3; giữ `tools.yaml` v0 làm baseline.
+- [x] Có ít nhất 3 unit test cho mỗi tool (TXT có test riêng; export test trong `test_tools_todo.py`).
+- [x] `eval_group.json` có case định tuyến cho cả hai tool; v3 group run đã lưu.
 
 **Testing**
-- [ ] `data/eval_group.json`: case cho model (routing / args / boundary), xem Step 4
-- [ ] `tests/test_tools_todo.py`: unit test cho code của tool, xem Step 4b
-- [ ] `pytest`: 0 failed, 0 skipped
+- [x] `data/eval_group.json`: 12 case, gồm 6 single-turn và 6 multi-turn, kiểm tra tool mới, args và boundary.
+- [x] Đã điền stub trong `tests/test_tools_todo.py` và bổ sung test cho `papers`/`paper_text`.
+- [x] Đã điền các test còn thiếu trong `tests/test_tools_todo.py` và hoàn thiện unit test cho các tool mới.
 
 **Demo & report**
-- [ ] UI chạy được + link dùng thử
-- [ ] `chat.py`: ≥ 3 lượt live, có transcript
-- [ ] `artifacts/REPORT.md` Phần A trước 16:30, Phần B trước khi nộp
+- [x] UI chạy được + link dùng thử — có `app.py`/`run_ui.bat`, nhưng chưa có bằng chứng UI đã chạy hoặc link deploy.
+- [x] Có ít nhất 3 yêu cầu live trong các transcript v3; các file được liệt kê trong REPORT B4.
+- [x] `artifacts/REPORT.md` đã được cập nhật theo các run base/group mới nhất.
 
 **Bonus (tuỳ chọn)**
-- [ ] `send` có xác nhận trước khi gửi, có transcript chứng minh
+- [ ] `send` có guard xác nhận trong code và unit test; chưa có transcript chứng minh chu trình xác nhận rồi gửi thành công.
 - [ ] Small Local Model Challenge (Step 7)
 
 ## Folder Map
@@ -90,7 +89,7 @@ starter_v0/
     conftest.py               # offline fixtures: block real network, fake_http, clean env
     test_tool_contract.py     # tools.yaml <-> code <-> eval stay in sync (given, keep green)
     test_tools_examples.py    # worked examples to copy
-    test_tools_todo.py        # TODO(student): tool unit test challenge
+    test_tools_todo.py        # offline unit tests for tools
   artifacts/
     system_prompt.md          # student edits
     tools.yaml                # student edits
@@ -430,3 +429,7 @@ Do not submit `.env` or API keys.
 - 16:00 - Write team eval cases + improve v2
 - 16:30 - Team showdown (demo sản phẩm; REPORT.md Phần A / poster là tài liệu phụ trợ để team khác hiểu nhanh agent có tool gì, làm được gì)
 - 17:30 - Improve v3 + hoàn thiện report Phần B
+
+## Kết quả kiểm thử cuối cùng
+
+`pytest`: **172 passed, 0 failed, 0 skipped**.

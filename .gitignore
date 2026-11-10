@@ -16,6 +16,8 @@ starter/
 
 # Tool scratch output
 arxiv_papers/
+starter_v0/exports/
+starter_v0/text_uploads/
 
 # OS / editor
 .DS_Store
